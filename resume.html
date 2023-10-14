@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resume.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container " id="cv-form">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">CREATE YOUR OWN RESUME</h1>
+            </div>
+            <div class="col-6">
+                <h3 class="">Personal Information</h3>
+
+                <label for="name" class="mt-2">Your Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter here">
+
+                <label for="DOB" class="mt-2">Date of Birth</label>
+                <input type="text" id="DOB" class="form-control" placeholder="Enter here">
+
+                <label for="number" class="mt-2">Contact Number</label>
+                <input type="text" id="number" class="form-control" placeholder="Enter here">
+
+                <label for="mail" class="mt-2">Email</label>
+                <input type="text" id="mail" class="form-control" placeholder="@gmail.com">
+
+                <label for="address" class="mt-2">Address</label>
+                <textarea name="" id="address"  rows="3" class="form-control" placeholder="Type here"></textarea>
+                
+                <label for="Instagram" class="mt-2">Hobbies</label>
+                <input type="text" id="hobbies" class="form-control" placeholder="Write here">
+
+                <label for="Instagram" class="mt-2">Strengths & Weaknesses</label>
+                <textarea rows="3" id="strwekness" class="form-control" placeholder="Write here"></textarea>
+                
+
+                <label for="About" class="mt-2">About myself</label>
+                <textarea name="" id="About"  rows="3" class="form-control" placeholder="Type here"></textarea>
+                
+            </div>
+            <div class="col-6">
+
+                <h3>Professional Information</h3> 
+
+                <label for="Instagram" class="mt-2">Instagram</label>
+                <input type="text" id="Instagram" class="form-control" placeholder="Paste link">
+                
+                <label for="Facebook" class="mt-2">Facebook</label>
+                <input type="text" id="Facebook" class="form-control" placeholder="Paste link">
+
+                <label for="Linkedin" class="mt-2">Linkedin</label>
+                <input type="text" id="Linkedin" class="form-control" placeholder="Paste link">
+
+                <label for="objective" class="mt-2">Objective</label>
+                <textarea name="objective" id="objective"rows="2" class="form-control" placeholder="  Describe here"></textarea>
+
+                <div id="we" class="mt-2">
+                    <label for="WorkExprience" class="mt-2">Work Exprience</label>
+                <input type="text" id="WorkExprience" class="form-control WorkExperience" placeholder="Describe One-by-One">
+
+                <div class="" id="workAddButton">
+                    <button class="btn btn-primary mx-auto d-block btn-sm my-2" onclick="addNewField()">Add</button>
+                </div>
+                </div>
+
+
+                <form action="" method="post" name="sample">
+
+                    <div class="mt-2" id="eq">
+                        <label for="EdcuationQul" class="mt-2">Educational Qualification</label>
+                        <div class="d-flex flex-row justify-content-between">
+                            <input type="text"  class="form-control EdcuationQulD m-1" name="degree" placeholder="Degree">
+                            <input type="text"  class="form-control EdcuationQulI m-1" name="insitute" placeholder="Institute">
+                            <input type="text"  class="form-control EdcuationQulY m-1" name="year" placeholder="Year">
+    
+                        </div>
+                    <div class="" id="eQAddButton">
+                        <button class="btn btn-primary mx-auto d-block btn-sm my-2" type="button" onclick="EQaddNewField()">Add</button>
+                    </div>
+                    </div>
+    
+                </form>
+
+                <div class="mt-2" id="lk">
+                    <label for="langknown" class="mt-2">Languages Known</label>
+                <input type="text" id="langknown" class="form-control langknown" placeholder="Describe One-by-One">
+
+                <div class="" id="lkAddButton">
+                    <button class="btn btn-primary mx-auto d-block btn-sm my-2" onclick="lkaddNewField()">Add</button>
+                </div>
+                </div>
+                
+                
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary mx-auto d-block btn-lg my-4" onclick="generateCv()">Generate CV</button>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary mx-auto d-block btn-md my-4" onclick="printcv()">Print CV</button>
+            </div>
+        </div>
+    </div>
+
+    <!---Template  -->
+    <div class="container-fluid bgcontainer d-flex flex-column justify-content-between">
+        <div class="row">
+            <div class="col-3 bgcolor m-3 p-3">
+                <img src="https://oceanbluesoftware.com/wp-content/uploads/2016/12/profile-photo.png" alt="" class="imgprofile img-thumbnail mx-auto d-block">
+
+                <div class="text-light my-2 pt-2">
+                    <h6 class="bghead1 my-2 text-center pt-1">Details</h6>
+                    <code >Name:</code><span id="nameT">name</span> <br>
+                    <code>DOB:</code><span id="dobT">08-04-2002</span>
+                    <br>
+                    <code>Phone:</code>  <span id="phoneT">458895989 </span><br>
+                    <code>Email:</code><span id="emailT">abc@gmail.com </span><br>
+                </div>
+
+                <hr>
+
+                <div class="text-light my-2 pt-2">
+                    <h6 class="bghead1 my-2 text-center pt-1">Links</h6>
+                    <code >Linkedin :</code><span id="linkedinT">name</span> <br>
+                    <code>Facebook :</code><span id="facebookT">08-04-2002</span> <br>
+                    <code>Instagram :</code><span id="instaT">458895989</span> <br>
+               
+                </div>
+
+                <hr>
+
+                <div class="text-light my-2 pt-2">
+                    <h6 class="bghead1 my-2 text-center pt-1">Address</h6>
+                    <p id="AddressT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, modi.</p>
+               
+                </div>
+
+                <hr>
+                <div class="text-light my-2 pt-2">
+                    <h6 class="bghead1 my-2 text-center pt-1">Strengths & Weaknesses</h6>
+                    <pre id="swT">Lorem ipsum dolor sit amet </pre>
+                   
+               
+                </div>
+
+                <hr>
+
+                
+
+                <div class="text-light my-2 pt-2">
+                    <h6 class="bghead1 my-2 text-center pt-1">Hobbies</h6>
+                    <p id="hobbiesT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, modi.</p>
+               
+                </div>
+
+            </div>
+            <di class="col-8 bgcolormaininfo ml-3  mt-3 p-3">
+                <h1 class="bghead pb-5 " id="name1T">name</h1>
+                <h6 class="bghead2 ">Professional Information</h6>
+                <div class="my-3">
+                    <h3 class="badge rounded-pill head">Objective :</h3>
+                    <p id="objT">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae dolorum impedit magni vero. A, nam perspiciatis ipsum inventore id repellat.</p>
+                </div>
+
+                <div class="my-3">
+                    <h3 class="badge rounded-pill head">Work Exprience :</h3>
+                    <ul id="workET">
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ducimus!</li>
+                      
+                    </ul>
+                </div>
+
+                <div class="my-3">
+                    <h3 class="badge rounded-pill head">Educational Qualification :</h3>
+                    
+                    <table class="table table-bordered table-hover" border="2" >
+                        <tr class="">
+                            
+                            <th>Course</th>
+                            <th>Name of Insitute</th>
+                            <th>Duration of Course</th>
+                            
+                        </tr>
+                        <tbody id="tdbody">
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="my-3">
+                    <h3 class="badge rounded-pill head">About myself :</h3>
+                    <p id="myselfT">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae dolorum impedit magni vero. A, nam perspiciatis ipsum inventore id repellat.</p>
+                </div>
+
+                <div class="my-3">
+                    <h3 class="badge rounded-pill head">Languages Known :</h3>
+                    <ul id="lkEl">
+                        <li>English</li>
+                        <li>Telugu</li>
+                        <li>Hindi</li>
+                    </ul>
+                </div>
+               
+
+            </di>
+
+            <div class="col-12 text-light my-4">
+                <h3 class="display-5">Decleration</h3>
+                I <span id="nameDec">name</span> ,hereby decleared that the above given Information is correct ,If it was wrong then you can disqualify me anytime.</div>
+        </div>
+    </div>
+
+    
+    <script src="resume.js"></script>
+</body>
+</html>

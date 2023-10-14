@@ -1,0 +1,48 @@
+.bgcontainer {
+    background-color: #063970;
+    
+}
+
+.bgcolor {
+    background-color: #000099;
+}
+.bgcolormaininfo {
+    background-color: white;
+}
+.imgprofile {
+    height: 200px;
+    width: 150px;
+
+}
+.bghead {
+    background-color: #063970;
+    font-size: 30px;
+    height: 50px;
+    width: auto;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+}
+
+.bghead1 {
+    background-color: #063970;
+    
+    height: 30px;
+    width: auto;
+    border-radius: 50px;
+    
+    color: white;
+}
+
+.bghead2 {
+    background-color: #063970;
+    text-align: center;
+    height: 20px;
+    width: auto;
+    border-radius: 50px;
+    color: white;
+}
+
+.head {
+    background-color: #063970;
+}
